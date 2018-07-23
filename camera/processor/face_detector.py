@@ -40,7 +40,7 @@ class FaceDetector(object):
         # 顔の位置を描画する
         count = 0
         #font = cv2.FONT_HERSHEY_SIMPLEX
-        #cv2.putText(frame,'count,(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
+        cv2.putText(frame,"Hello World!!!", (10,10), cv2.CV_FONT_HERSHEY_SIMPLEX, 2, 255)
         for (x,y,w,h) in faces:
             cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
             count += 1
